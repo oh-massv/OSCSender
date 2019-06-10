@@ -14,6 +14,30 @@
 		1C52703522ADDB7700E71976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C52703322ADDB7700E71976 /* LaunchScreen.storyboard */; };
 		1C52704022ADDB7700E71976 /* OSCSenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52703F22ADDB7700E71976 /* OSCSenderTests.swift */; };
 		1C52704B22ADDB7700E71976 /* OSCSenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52704A22ADDB7700E71976 /* OSCSenderUITests.swift */; };
+		1C52708E22ADDBD800E71976 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52705A22ADDBD800E71976 /* F53OSCPacket.m */; };
+		1C52708F22ADDBD800E71976 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52705B22ADDBD800E71976 /* GCDAsyncUdpSocket.m */; };
+		1C52709022ADDBD800E71976 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52705E22ADDBD800E71976 /* GCDAsyncSocket.m */; };
+		1C52709122ADDBD800E71976 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706322ADDBD800E71976 /* F53OSCServer.m */; };
+		1C52709222ADDBD800E71976 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706422ADDBD800E71976 /* NSNumber+F53OSCNumber.m */; };
+		1C52709322ADDBD800E71976 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706522ADDBD800E71976 /* F53OSCSocket.m */; };
+		1C52709422ADDBD800E71976 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706922ADDBD800E71976 /* NSString+F53OSCString.m */; };
+		1C52709522ADDBD800E71976 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706C22ADDBD800E71976 /* F53OSCClient.m */; };
+		1C52709622ADDBD800E71976 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52706D22ADDBD800E71976 /* NSDate+F53OSCTimeTag.m */; };
+		1C52709722ADDBD800E71976 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707222ADDBD800E71976 /* F53OSCTimeTag.m */; };
+		1C52709822ADDBD800E71976 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707322ADDBD800E71976 /* NSData+F53OSCBlob.m */; };
+		1C52709922ADDBD800E71976 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C52707422ADDBD800E71976 /* LICENSE.txt */; };
+		1C52709A22ADDBD800E71976 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707522ADDBD800E71976 /* F53OSCParser.m */; };
+		1C52709B22ADDBD800E71976 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707822ADDBD800E71976 /* DDTTYLogger.m */; };
+		1C52709C22ADDBD800E71976 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707B22ADDBD800E71976 /* DDASLLogger.m */; };
+		1C52709D22ADDBD800E71976 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707E22ADDBD800E71976 /* DDContextFilterLogFormatter.m */; };
+		1C52709E22ADDBD800E71976 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52707F22ADDBD800E71976 /* DDDispatchQueueLogFormatter.m */; };
+		1C52709F22ADDBD800E71976 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708222ADDBD800E71976 /* DDMultiFormatter.m */; };
+		1C5270A022ADDBD800E71976 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C52708422ADDBD800E71976 /* README.txt */; };
+		1C5270A122ADDBD800E71976 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708522ADDBD800E71976 /* DDLog.m */; };
+		1C5270A222ADDBD800E71976 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708822ADDBD800E71976 /* DDAbstractDatabaseLogger.m */; };
+		1C5270A322ADDBD800E71976 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708922ADDBD800E71976 /* DDFileLogger.m */; };
+		1C5270A422ADDBD800E71976 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708C22ADDBD800E71976 /* F53OSCMessage.m */; };
+		1C5270A522ADDBD800E71976 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52708D22ADDBD800E71976 /* F53OSCBundle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +71,57 @@
 		1C52704622ADDB7700E71976 /* OSCSenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCSenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C52704A22ADDB7700E71976 /* OSCSenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCSenderUITests.swift; sourceTree = "<group>"; };
 		1C52704C22ADDB7700E71976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C52705922ADDBD800E71976 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		1C52705A22ADDBD800E71976 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		1C52705B22ADDBD800E71976 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		1C52705C22ADDBD800E71976 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		1C52705D22ADDBD800E71976 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		1C52705E22ADDBD800E71976 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		1C52705F22ADDBD800E71976 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		1C52706022ADDBD800E71976 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		1C52706122ADDBD800E71976 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		1C52706222ADDBD800E71976 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		1C52706322ADDBD800E71976 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		1C52706422ADDBD800E71976 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		1C52706522ADDBD800E71976 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
+		1C52706622ADDBD800E71976 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		1C52706722ADDBD800E71976 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		1C52706822ADDBD800E71976 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
+		1C52706922ADDBD800E71976 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		1C52706A22ADDBD800E71976 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		1C52706B22ADDBD800E71976 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		1C52706C22ADDBD800E71976 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		1C52706D22ADDBD800E71976 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		1C52706E22ADDBD800E71976 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		1C52706F22ADDBD800E71976 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
+		1C52707022ADDBD800E71976 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		1C52707122ADDBD800E71976 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		1C52707222ADDBD800E71976 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		1C52707322ADDBD800E71976 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		1C52707422ADDBD800E71976 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1C52707522ADDBD800E71976 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
+		1C52707822ADDBD800E71976 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		1C52707922ADDBD800E71976 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		1C52707A22ADDBD800E71976 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		1C52707B22ADDBD800E71976 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		1C52707C22ADDBD800E71976 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		1C52707E22ADDBD800E71976 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		1C52707F22ADDBD800E71976 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		1C52708022ADDBD800E71976 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		1C52708122ADDBD800E71976 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		1C52708222ADDBD800E71976 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		1C52708322ADDBD800E71976 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		1C52708422ADDBD800E71976 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1C52708522ADDBD800E71976 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		1C52708622ADDBD800E71976 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		1C52708722ADDBD800E71976 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		1C52708822ADDBD800E71976 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		1C52708922ADDBD800E71976 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		1C52708A22ADDBD800E71976 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		1C52708B22ADDBD800E71976 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		1C52708C22ADDBD800E71976 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		1C52708D22ADDBD800E71976 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		1C5270A622ADDF2D00E71976 /* F53OSC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "F53OSC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +172,12 @@
 		1C52702922ADDB7600E71976 /* OSCSender */ = {
 			isa = PBXGroup;
 			children = (
+				1C52705822ADDBD800E71976 /* F53OSC */,
 				1C52702A22ADDB7600E71976 /* AppDelegate.swift */,
 				1C52702C22ADDB7600E71976 /* ViewController.swift */,
 				1C52702E22ADDB7600E71976 /* Main.storyboard */,
 				1C52703122ADDB7700E71976 /* Assets.xcassets */,
+				1C5270A622ADDF2D00E71976 /* F53OSC-Bridging-Header.h */,
 				1C52703322ADDB7700E71976 /* LaunchScreen.storyboard */,
 				1C52703622ADDB7700E71976 /* Info.plist */,
 			);
@@ -123,6 +200,87 @@
 				1C52704C22ADDB7700E71976 /* Info.plist */,
 			);
 			path = OSCSenderUITests;
+			sourceTree = "<group>";
+		};
+		1C52705822ADDBD800E71976 /* F53OSC */ = {
+			isa = PBXGroup;
+			children = (
+				1C52705922ADDBD800E71976 /* F53OSCProtocols.h */,
+				1C52705A22ADDBD800E71976 /* F53OSCPacket.m */,
+				1C52705B22ADDBD800E71976 /* GCDAsyncUdpSocket.m */,
+				1C52705C22ADDBD800E71976 /* NSString+F53OSCString.h */,
+				1C52705D22ADDBD800E71976 /* NSDate+F53OSCTimeTag.h */,
+				1C52705E22ADDBD800E71976 /* GCDAsyncSocket.m */,
+				1C52705F22ADDBD800E71976 /* F53OSCFoundationAdditions.h */,
+				1C52706022ADDBD800E71976 /* F53OSCClient.h */,
+				1C52706122ADDBD800E71976 /* NSData+F53OSCBlob.h */,
+				1C52706222ADDBD800E71976 /* F53OSCTimeTag.h */,
+				1C52706322ADDBD800E71976 /* F53OSCServer.m */,
+				1C52706422ADDBD800E71976 /* NSNumber+F53OSCNumber.m */,
+				1C52706522ADDBD800E71976 /* F53OSCSocket.m */,
+				1C52706622ADDBD800E71976 /* F53OSCMessage.h */,
+				1C52706722ADDBD800E71976 /* F53OSCBundle.h */,
+				1C52706822ADDBD800E71976 /* F53OSCParser.h */,
+				1C52706922ADDBD800E71976 /* NSString+F53OSCString.m */,
+				1C52706A22ADDBD800E71976 /* GCDAsyncUdpSocket.h */,
+				1C52706B22ADDBD800E71976 /* F53OSCPacket.h */,
+				1C52706C22ADDBD800E71976 /* F53OSCClient.m */,
+				1C52706D22ADDBD800E71976 /* NSDate+F53OSCTimeTag.m */,
+				1C52706E22ADDBD800E71976 /* GCDAsyncSocket.h */,
+				1C52706F22ADDBD800E71976 /* F53OSCSocket.h */,
+				1C52707022ADDBD800E71976 /* NSNumber+F53OSCNumber.h */,
+				1C52707122ADDBD800E71976 /* F53OSCServer.h */,
+				1C52707222ADDBD800E71976 /* F53OSCTimeTag.m */,
+				1C52707322ADDBD800E71976 /* NSData+F53OSCBlob.m */,
+				1C52707422ADDBD800E71976 /* LICENSE.txt */,
+				1C52707522ADDBD800E71976 /* F53OSCParser.m */,
+				1C52707622ADDBD800E71976 /* Vendor */,
+				1C52708B22ADDBD800E71976 /* F53OSC.h */,
+				1C52708C22ADDBD800E71976 /* F53OSCMessage.m */,
+				1C52708D22ADDBD800E71976 /* F53OSCBundle.m */,
+			);
+			path = F53OSC;
+			sourceTree = "<group>";
+		};
+		1C52707622ADDBD800E71976 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1C52707722ADDBD800E71976 /* CocoaLumberjack */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1C52707722ADDBD800E71976 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				1C52707822ADDBD800E71976 /* DDTTYLogger.m */,
+				1C52707922ADDBD800E71976 /* DDLog.h */,
+				1C52707A22ADDBD800E71976 /* DDAbstractDatabaseLogger.h */,
+				1C52707B22ADDBD800E71976 /* DDASLLogger.m */,
+				1C52707C22ADDBD800E71976 /* DDFileLogger.h */,
+				1C52707D22ADDBD800E71976 /* Extensions */,
+				1C52708522ADDBD800E71976 /* DDLog.m */,
+				1C52708622ADDBD800E71976 /* DDTTYLogger.h */,
+				1C52708722ADDBD800E71976 /* DDLog+LOGV.h */,
+				1C52708822ADDBD800E71976 /* DDAbstractDatabaseLogger.m */,
+				1C52708922ADDBD800E71976 /* DDFileLogger.m */,
+				1C52708A22ADDBD800E71976 /* DDASLLogger.h */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		1C52707D22ADDBD800E71976 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C52707E22ADDBD800E71976 /* DDContextFilterLogFormatter.m */,
+				1C52707F22ADDBD800E71976 /* DDDispatchQueueLogFormatter.m */,
+				1C52708022ADDBD800E71976 /* DDMultiFormatter.h */,
+				1C52708122ADDBD800E71976 /* DDContextFilterLogFormatter.h */,
+				1C52708222ADDBD800E71976 /* DDMultiFormatter.m */,
+				1C52708322ADDBD800E71976 /* DDDispatchQueueLogFormatter.h */,
+				1C52708422ADDBD800E71976 /* README.txt */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C52709922ADDBD800E71976 /* LICENSE.txt in Resources */,
 				1C52703522ADDB7700E71976 /* LaunchScreen.storyboard in Resources */,
 				1C52703222ADDB7700E71976 /* Assets.xcassets in Resources */,
 				1C52703022ADDB7600E71976 /* Main.storyboard in Resources */,
+				1C5270A022ADDBD800E71976 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +416,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5270A422ADDBD800E71976 /* F53OSCMessage.m in Sources */,
+				1C5270A122ADDBD800E71976 /* DDLog.m in Sources */,
+				1C5270A322ADDBD800E71976 /* DDFileLogger.m in Sources */,
+				1C52709D22ADDBD800E71976 /* DDContextFilterLogFormatter.m in Sources */,
+				1C52709C22ADDBD800E71976 /* DDASLLogger.m in Sources */,
+				1C52709722ADDBD800E71976 /* F53OSCTimeTag.m in Sources */,
+				1C52709822ADDBD800E71976 /* NSData+F53OSCBlob.m in Sources */,
+				1C52709F22ADDBD800E71976 /* DDMultiFormatter.m in Sources */,
+				1C52708F22ADDBD800E71976 /* GCDAsyncUdpSocket.m in Sources */,
+				1C52709422ADDBD800E71976 /* NSString+F53OSCString.m in Sources */,
+				1C52709122ADDBD800E71976 /* F53OSCServer.m in Sources */,
+				1C52709522ADDBD800E71976 /* F53OSCClient.m in Sources */,
+				1C52709B22ADDBD800E71976 /* DDTTYLogger.m in Sources */,
+				1C5270A222ADDBD800E71976 /* DDAbstractDatabaseLogger.m in Sources */,
+				1C5270A522ADDBD800E71976 /* F53OSCBundle.m in Sources */,
+				1C52709022ADDBD800E71976 /* GCDAsyncSocket.m in Sources */,
 				1C52702D22ADDB7600E71976 /* ViewController.swift in Sources */,
+				1C52709E22ADDBD800E71976 /* DDDispatchQueueLogFormatter.m in Sources */,
+				1C52708E22ADDBD800E71976 /* F53OSCPacket.m in Sources */,
+				1C52709322ADDBD800E71976 /* F53OSCSocket.m in Sources */,
+				1C52709222ADDBD800E71976 /* NSNumber+F53OSCNumber.m in Sources */,
+				1C52709622ADDBD800E71976 /* NSDate+F53OSCTimeTag.m in Sources */,
 				1C52702B22ADDB7600E71976 /* AppDelegate.swift in Sources */,
+				1C52709A22ADDBD800E71976 /* F53OSCParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = massv.OSCSender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSCSender/F53OSC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = massv.OSCSender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSCSender/F53OSC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
