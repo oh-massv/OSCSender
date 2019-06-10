@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        oscClient.host = "172.24.21.99"
+        oscClient.host = "000.000.0.000"
         oscClient.port = 3333
     }
     
